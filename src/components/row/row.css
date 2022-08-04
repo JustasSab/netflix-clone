@@ -1,3 +1,7 @@
+.rowList {
+    position: absolute;
+    top: 750px;
+}
 .row__posters {
     display: flex;
     gap: 1rem;
