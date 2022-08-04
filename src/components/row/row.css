@@ -1,0 +1,9 @@
+.row__posters {
+    display: flex;
+    gap: 1rem;
+}
+.row__posters img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
