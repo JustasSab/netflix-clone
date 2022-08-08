@@ -8,51 +8,66 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+        /* position: fixed;
+        z-index: -99999;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        -ms-transform: scale(2, 3);
+        -webkit-transform: scale(2, 3);
+        transform: scale(2, 3); */
 }
-.content {
+.header video {
+
+}
+.trailer-content {
     bottom: 200px;
     color: #f1f1f1;
     width: 100%;
     padding: 70px;
 }
-.content img {
+.trailer-content img {
     position: absolute;
     bottom: 350px;
     width: 330px;
     height: 160px;
 }
-.content .btn {
-
+.trailer-content .btn {
     text-align: center;
-    font-size: 25px;
+    justify-content: center;
+    /* font-size: 22px; */
     font-weight: 700;
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
 }
-.content #PlayBtn {
-    padding: 15px 44px;
+.trailer-content .btn svg {
+    font-size: 25px;
+}
+.trailer-content #PlayBtn {
+    padding: 12px 40px;
     position: absolute;
     bottom: 280px;
     background-color: #fff;
     color: black;
 }
-.content #InfoButton {
-    padding: 15px 50px;
+.trailer-content #InfoButton {
+    padding: 12px 36px;
     position: absolute;
     bottom: 280px;
-    left: 220px;
+    left: 242px;
     background-color: rgba(109, 109, 110, 0.7);
     color: white;
 }
-.content #InfoButton svg{
-    font-size: 30px;
+.trailer-content #PlayBtn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
-.content button {
-    position: relative;
+.trailer-content #InfoButton:hover {
+    background-color: rgba(109, 109, 110, 0.5);
 }
-.content button svg{
-    position: absolute;
-    top: 20px;
-    left: 15px;
+.trailer-content .btn span {
+    margin-left: 10px;
 }

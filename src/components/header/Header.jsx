@@ -9,13 +9,13 @@ const Header = () => {
             <video id="videoTrailer" autoPlay muted loop>
                 <source src={Trailer} type="video/mp4"/>
             </video>
-            <div class="content">
+            <div class="trailer-content">
                 <img src={TrailerTitle} alt="TrailerTitle" />
                 <button className="btn" id="PlayBtn" onClick="myFunction()">
                     <FaPlay/> <span>Play</span>
                 </button>
                 <button className="btn" id="InfoButton" onClick="myFunction()">
-                    <FaInfoCircle/>More Info
+                    <FaInfoCircle/> <span>More Info</span> 
                 </button>
             </div>
         </div>
