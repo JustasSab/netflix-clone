@@ -1,5 +1,65 @@
-.header img {
+.header {
+    position: relative;
+}
+#videoTrailer {
+    width: 100vw;
+    height: auto;
+}
+.trailer-content {
     position: absolute;
-    top: 0;
-    width: 100%;
+    top: 340px;
+    color: #f1f1f1;
+    padding-left: 70px;
+    transition: 0.5s;
+}
+.trailer-content img {
+    width: 30vw;
+    height: 10vw;
+}
+.trailer-content .btn {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.trailer-content .btn svg {
+    font-size: 1.5vw;
+}
+.trailer-content #PlayBtn {
+    /* padding: 12px 40px; */
+    padding: 1vw 3vw;
+    background-color: #fff;
+    color: black;
+    margin: 10px 20px 0 0;
+}
+.trailer-content #InfoButton {
+    /* padding: 12px 36px; */
+    padding: 1vw 3vw;
+    left: 242px;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+.trailer-content #PlayBtn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.trailer-content #InfoButton:hover {
+    background-color: rgba(109, 109, 110, 0.5);
+}
+.trailer-content .btn span {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 950px) {
+    .trailer-content {
+        top: 150px;
+        padding-left: 20px;
+    }
+    .trailer-content #PlayBtn {
+        margin: 5px 10px 0 0;
+    }
 }
