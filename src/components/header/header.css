@@ -7,10 +7,11 @@
 }
 .trailer-content {
     position: absolute;
-    top: 340px;
+    top: 400px;
     color: #f1f1f1;
     padding-left: 70px;
     transition: 0.5s;
+    width: 100%;
 }
 .trailer-content img {
     width: 30vw;
@@ -53,7 +54,28 @@
 .trailer-content .btn span {
     margin-left: 10px;
 }
-
+.trailer-content #muteButton  {
+    background: transparent;
+    border: none;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+.trailer-content #muteButton svg {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+@media screen and (max-width: 1280px) {
+    .trailer-content {
+        top: 240px;
+        padding-left: 30px;
+    }
+    .trailer-content #PlayBtn {
+        margin: 5px 10px 0 0;
+    }
+}
 @media screen and (max-width: 950px) {
     .trailer-content {
         top: 150px;
