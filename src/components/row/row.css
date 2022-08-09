@@ -1,14 +1,24 @@
 .rowList {
-    
+    position: relative;
+    top: -10vw;
+    margin: 3vw;
+}
+.row {
+    margin: 0 0 3vw 0;
 }
 .row__posters {
-    display: flex;
-    gap: 1rem;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: inline-flex; /* overflowina i desine (inspect site) */
+    gap: 15px;
+}
+.row__poster {
+
 }
 .row__posters img {
-    max-width: 200px;
-    width: 100%;
+    max-width: 10vw;
+    /* width: 25vw; */ /* sito turbut nereikia */
     height: auto;
+    border-radius: 10px;
 }
+/* .row:first-child h2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 0.07) 85%);
+} */
