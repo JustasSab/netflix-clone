@@ -1,10 +1,9 @@
 import './navbar.css';
 import Logo from '../../assets/logo.png';
-import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PersonIcon from '@mui/icons-material/Person';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-
+import Search from '../search/Search';
 
 const NavBar = () => {
     return (
@@ -36,10 +35,10 @@ const NavBar = () => {
             </div>
             <div className="secondary-navigation">
                 <div className="nav-element">
-                    <SearchIcon />
+                    <Search />
                 </div>
                 <div className="nav-element">
-                    <a href="/">Kids</a>
+                    <a href="#">Kids</a>
                 </div>
                 <div className="nav-element">
                     <NotificationsIcon />

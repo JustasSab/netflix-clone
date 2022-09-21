@@ -1,0 +1,49 @@
+.searchBox {
+    position: relative;
+}
+.searchBox button svg {
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 25%;
+    right: 13px
+}
+.searchBox input {
+    height: 35px;
+    width: 35px;
+    border-style: none;
+    padding: 10px;
+    outline: none;
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    padding-right: 40px;
+    color: #fff;
+}
+.searchBox input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+.searchBox button {
+    width: 50px;
+    height: 20px;
+    border-style: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    background-color: transparent;
+}
+.searchBox button:focus~input {
+    width: 240px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    transition: all 300ms ease-out(0, 0.110, 0.35, 2);
+}
+.searchBox input:focus {
+    width: 240px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    transition: all 300ms ease-out(0, 0.110, 0.35, 2);
+}
