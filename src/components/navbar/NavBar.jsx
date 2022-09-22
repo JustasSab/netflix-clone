@@ -19,13 +19,13 @@ const NavBar = () => {
                 <li><a href="/latest" >New &amp; Popular</a></li>
                 <li><a href="/my-list">My List</a></li>
             </ul>
-            <div class="dropdown" id="hamburger-icon">
-                <button class="mobile-list-item">Browse
+            <div className="dropdown" id="hamburger-icon">
+                <button className="mobile-list-item">Browse
                     <ArrowDropDownIcon/>
                 </button>
-                <div class="callout-arrow"></div>
-                <div class="topbar"></div>
-                <ul class="dropdown-menu">
+                <div className="callout-arrow"></div>
+                <div className="topbar"></div>
+                <ul className="dropdown-menu">
                     <li><a href="/home">Home</a></li>
                     <li><a href="/tvshows">TV Shows</a></li>
                     <li><a href="/movies">Movies</a></li>

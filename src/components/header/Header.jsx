@@ -17,7 +17,7 @@ const Header = () => {
             <video id="videoTrailer" muted={audioSwitcher} autoPlay loop>
                 <source src={TrailerVideo} type="video/mp4"/>
             </video>
-            <div class="trailer-content">
+            <div className="trailer-content">
                 <img src={TrailerLogo} alt="TrailerTitle" />
                 <button className="btn" id="PlayBtn" onClick="myFunction()">
                     <FaPlay/> <span>Play</span>
