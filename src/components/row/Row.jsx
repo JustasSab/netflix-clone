@@ -5,6 +5,7 @@ import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import AddIcon from '@mui/icons-material/Add';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import GradeIcon from '@mui/icons-material/Grade';
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -20,6 +21,7 @@ const Row = ({ title, fetchUrl }) => {
         fetchData();
     }, [fetchUrl]);
     console.log(movies);
+
     return (
         <div className="row">
             <h2>{title}</h2>
@@ -35,9 +37,14 @@ const Row = ({ title, fetchUrl }) => {
                             <button><AddIcon /></button>
                             <button><ThumbUpOutlinedIcon /></button>
                             <button><KeyboardArrowDownOutlinedIcon /></button>
-                            <div>
-                                <span>{movie.vote_average}</span><br></br>
-                                <span>{movie.release_date}</span>
+                            <div className='poster_info'>
+                                <span className='movie_rating'><GradeIcon />{movie.vote_average.toFixed(1)}</span>
+                                <span className='movie_lenght'>2h 10m</span>
+                                {/* <span className='movie_genres'> 
+                                    <li>Genre1</li>
+                                    <li>Genre2</li>
+                                    <li>Genre3</li>
+                                </span> */}
                             </div>
                         </div>
                     </div>
