@@ -33,18 +33,22 @@ const Row = ({ title, fetchUrl }) => {
                             alt={movie.original_title} 
                         />
                         <div className='poster_card'>
-                            <button><PlayCircleIcon /></button>
-                            <button><AddIcon /></button>
-                            <button><ThumbUpOutlinedIcon /></button>
-                            <button><KeyboardArrowDownOutlinedIcon /></button>
-                            <div className='poster_info'>
-                                <span className='movie_rating'><GradeIcon />{movie.vote_average.toFixed(1)}</span>
+                            <div className="poster_info_top">
+                                <button><PlayCircleIcon /></button>
+                                <button><AddIcon /></button>
+                                <button><ThumbUpOutlinedIcon /></button>
+                                <button><KeyboardArrowDownOutlinedIcon /></button>
+                            </div>
+                            <div className='poster_info_middle'>
                                 <span className='movie_lenght'>2h 10m</span>
-                                {/* <span className='movie_genres'> 
+                                <span className='movie_rating'><GradeIcon />{movie.vote_average.toFixed(1)}</span>
+                            </div>
+                            <div className='poster_info_bottom'>
+                                <span className='movie_genres'>
                                     <li>Genre1</li>
                                     <li>Genre2</li>
                                     <li>Genre3</li>
-                                </span> */}
+                                </span>
                             </div>
                         </div>
                     </div>

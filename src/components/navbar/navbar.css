@@ -3,6 +3,16 @@
     position: absolute;
     z-index: 1;
     width: 100%;
+    position: fixed;
+    transition: all 800ms;
+}
+.primary-header-container-scroll {
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    transition: all 800ms;
 }
 .primary-header {
     display: flex;

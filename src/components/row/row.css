@@ -52,6 +52,10 @@
 .poster_card button:nth-child(4) {
     float: right;
 }
+.poster_info_middle {
+    display: flex;
+    justify-content: space-between;
+}
 .poster_card .movie_lenght {
     float: left;
     margin: 7px;
@@ -65,9 +69,9 @@
     padding-top: 3px;
 }
 .poster_card .movie_genres {
-    display: block;
-    margin: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 @media screen and (max-width: 950px) {
     .rowList {

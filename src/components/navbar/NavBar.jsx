@@ -4,10 +4,23 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import PersonIcon from '@mui/icons-material/Person';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Search from '../search/Search';
+import { useState } from 'react';
 
 const NavBar = () => {
+    const [changeCss, setChangeCss] = useState(false);
+    const changeScrollCss = () => {
+        const scrollValue = document.documentElement.scrollTop;
+        if (scrollValue > 10){
+            setChangeCss(true);
+        }
+        else  {
+            setChangeCss(false);
+        }
+    }
+    window.addEventListener('scroll',changeScrollCss)
+
     return (
-    <div className="primary-header-container">
+    <div className={changeCss ? "primary-header-container-scroll" : "primary-header-container"}>
         <div className="primary-header">
             <a id="brand" href="/">
                 <img src={Logo} alt="Netflix"></img>
