@@ -10,24 +10,24 @@
     font-size: 30px;
     padding: 5px 0;
 }
-.row__posters {
-    display: inline-flex; /* overflowina i desine (inspect site) */
-    gap: 15px;
-}
-.row__posters img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px 8px 0 0;
+.posters_slider {
+    display: flex;
 }
 .row__poster {
+    position: relative;
     cursor: pointer;
+    flex: 0 0 15%;
+    margin: 0 5px;
 }
 .row__poster:hover {
-    transform: scale(1.5);
-    transition: all 0.3s ;
+    transform: scale(1.2);
+    transition: all 300ms ease-in-out;
+    z-index: 1;
 }
 .poster_card {
     display: none;
+    position: absolute;
+    width: 100%;
 }
 .row__poster:hover .poster_card {
     display: block;
@@ -35,7 +35,6 @@
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .poster_card {
-    font-size: 10px;
     padding: 8px;
     border-radius: 0 0 8px 8px;
     overflow: hidden;
@@ -43,13 +42,21 @@
 .poster_card button {
     background-color: transparent;
     border: none;
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+.poster_card button:hover {
+    background-color: transparent;
+    border: none;
     color: white;
     cursor: pointer;
 }
 .poster_card button svg {
-    font-size: 18px;
+    font-size: 30px;
 }
 .poster_card button:nth-child(4) {
+    margin: 0;
+    padding: 0;
     float: right;
 }
 .poster_info_middle {
