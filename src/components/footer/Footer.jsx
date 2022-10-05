@@ -42,7 +42,6 @@ const Footer = () => {
                     <a href="#"><span>Contact Us</span></a>
                 </li>
             </ul>
-           
             <div class="footer-service">
                 <button class="service-code">Service Code</button>
             </div>

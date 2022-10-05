@@ -6,6 +6,8 @@ import AddIcon from '@mui/icons-material/Add';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import GradeIcon from '@mui/icons-material/Grade';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -24,7 +26,10 @@ const Row = ({ title, fetchUrl }) => {
 
     return (
         <div className="row">
-            <h2>{title}</h2>
+            <div className="row-header">
+                <h2>{title}</h2>
+                <div class="see-all-link">Explore All <ArrowForwardIosIcon /></div>
+            </div>
             <div className="posters_slider">
                 {movies.map((movie) => (
                     <div className='row__poster'>
@@ -53,7 +58,17 @@ const Row = ({ title, fetchUrl }) => {
                         </div>
                     </div>
                 ))}
-            </div>
+                <div className="slider-right">
+                    <button className='slide-to-right'>
+                        <ArrowForwardIosIcon />
+                    </button>
+                </div>
+                <div className="slider-left">
+                    <button className='slide-to-left'>
+                        <ArrowBackIosIcon />
+                    </button>
+                </div>
+            </div>         
         </div>
     );
 }
