@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/netflix-clone/static/css/main.3e1ee989.css",
+    "main.js": "/netflix-clone/static/js/main.9393cda2.js",
+    "static/media/Narcos.mp4": "/netflix-clone/static/media/Narcos.fc28d9e699767b09f64f.mp4",
+    "static/media/Narcos-Logo.png": "/netflix-clone/static/media/Narcos-Logo.ce651cff39632e56cc6a.png",
+    "index.html": "/netflix-clone/index.html",
+    "main.3e1ee989.css.map": "/netflix-clone/static/css/main.3e1ee989.css.map",
+    "main.9393cda2.js.map": "/netflix-clone/static/js/main.9393cda2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e1ee989.css",
+    "static/js/main.9393cda2.js"
+  ]
+}
