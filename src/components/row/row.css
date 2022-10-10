@@ -1,26 +1,152 @@
 .rowList {
     position: relative;
-    top: -10vw;
-    margin: 3vw;
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 0.07) 85%); */
+    top: -10rem;
+    margin: 0 50px;
 }
 .row {
-    margin: 0 0 3vw 0;
+    margin-bottom: 3vw;
 }
-.row h2 {
-    font-size: 3vw;
+/* Row Header */
+.row-header {
+    display: flex;
+    align-items: baseline;
 }
-.row__posters {
-    display: inline-flex; /* overflowina i desine (inspect site) */
-    gap: 15px;
+.row-header h2 {
+    font-size: 30px;
+    padding: 5px 0;
 }
-.row__posters img {
-    max-width: 10vw;
-    /* width: 25vw; */ /* sito turbut nereikia */
-    height: auto;
-    border-radius: 10px;
+.row-header h2, 
+.row-header .see-all-link {
+    cursor: pointer;
+}
+.row-header .see-all-link {
+    max-width: 0;
+    width: 0;
+    opacity: 0;
+    color: #54b9c5;
+    font-weight: 700;
+    transition: max-width 1s, opacity 1s, transform .75s;
+    white-space: nowrap;
+}
+.row-header .see-all-link svg{
+    font-size: 16px;
+    vertical-align: middle;
+}
+.row:hover .see-all-link {
+    display: block;
+    opacity: 1;
+    transform: translate(1vw);
 }
 
+/* Poster Slider */
+.posters_slider {
+    position: relative;
+    display: flex;
+}
+.row__poster {
+    position: relative;
+    cursor: pointer;
+    flex: 0 0 13.68%;
+    margin: 0 5px;
+}
+.row__poster:hover {
+    transform: scale(1.2);
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+}
+.slider-right {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: 10;
+    display: flex;
+    background: #1c1c1c96;
+    height: 100%;
+}
+.slider-left {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: 10;
+    display: flex;
+    background: #1c1c1c78;
+    height: 100%;
+}
+.row:hover .slide-to-right,
+.row:hover .slide-to-left {
+    display: block
+}
+.slide-to-right,
+.slide-to-left {
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.slide-to-right svg,
+.slide-to-left svg {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+/* Poster Card */
+.poster_card {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.row__poster:hover .poster_card {
+    display: block;
+    background-color: #1c1c1c;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.poster_card {
+    padding: 8px;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+.poster_card button {
+    background-color: transparent;
+    border: none;
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+.poster_card button:hover {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.poster_card button svg {
+    font-size: 30px;
+}
+.poster_card button:nth-child(4) {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.poster_info_middle {
+    display: flex;
+    justify-content: space-between;
+}
+.poster_card .movie_lenght {
+    float: left;
+    margin: 7px;
+}
+.poster_card .movie_rating {
+    float: right;
+    margin: 7px;
+}
+.poster_card .movie_rating svg{
+    font-size: 13px;
+    padding-top: 3px;
+}
+.poster_card .movie_genres {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
 @media screen and (max-width: 950px) {
     .rowList {
         top: -13vw;

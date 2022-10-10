@@ -1,7 +1,7 @@
 import Header from "./components/header/Header";
 import NavBar from "./components/navbar/NavBar";
 import RowList from "./components/row/RowList";
-
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <NavBar/>
       <Header/>
       <RowList/>
+      <Footer />
     </div>
   );
 }
