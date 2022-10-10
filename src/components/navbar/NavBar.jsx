@@ -17,20 +17,20 @@ const NavBar = () => {
             setChangeCss(false);
         }
     }
-    window.addEventListener('scroll',changeScrollCss)
+    window.addEventListener('scroll', changeScrollCss)
 
     return (
     <div className={changeCss ? "primary-header-container-scroll" : "primary-header-container"}>
         <div className="primary-header">
-            <a id="brand" href="/">
+            <a id="brand" href="#">
                 <img src={Logo} alt="Netflix"></img>
             </a>
             <ul className="nav-list">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/tvshows">TV Shows</a></li>
-                <li><a href="/movies">Movies</a></li>
-                <li><a href="/latest" >New &amp; Popular</a></li>
-                <li><a href="/my-list">My List</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#" >New &amp; Popular</a></li>
+                <li><a href="#">My List</a></li>
             </ul>
             <div className="dropdown" id="hamburger-icon">
                 <button className="mobile-list-item">Browse
@@ -39,11 +39,11 @@ const NavBar = () => {
                 <div className="callout-arrow"></div>
                 <div className="topbar"></div>
                 <ul className="dropdown-menu">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/tvshows">TV Shows</a></li>
-                    <li><a href="/movies">Movies</a></li>
-                    <li><a href="/latest" >New &amp; Popular</a></li>
-                    <li><a href="/my-list">My List</a></li>
+                    <li><a href="#e">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#" >New &amp; Popular</a></li>
+                    <li><a href="#">My List</a></li>
                 </ul>
             </div>
             <div className="secondary-navigation">
