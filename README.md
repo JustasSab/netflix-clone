@@ -1,5 +1,7 @@
 # Netflix Clone
 
+Work still in progress
+
 ## About The Project
 A Netflix clone created using React.
 
