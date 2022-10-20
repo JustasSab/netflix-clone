@@ -1,5 +1,7 @@
 # Netflix Clone
 
+**[Preview Website](https://justassab.github.io/netflix-clone/)**
+
 Work still in progress
 
 ## About The Project
